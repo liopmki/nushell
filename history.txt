@@ -1,0 +1,106 @@
+ls
+hx
+cd ws
+ls
+neofetch
+ls
+echo $SHELL
+echo a
+ls
+echo "hello world" | save a.txt
+ls
+hx a.txt
+rm a.txt
+ls
+scoop search zsh
+ls
+neofetch
+exit
+ls
+exit
+ls
+exit
+ls
+cd ws
+ls
+cd gitt\
+ls
+gitui
+cd
+exit
+ls
+cd
+cd .cache\
+ls
+cd starship\
+ls
+starship init nu | save -f ~/.cache/starship/init.nu
+ls
+hx init.nu
+exit
+extit
+exit
+cd .config\
+ls
+hx starship.toml
+subl starship.toml
+code starship.toml
+ls
+subl starship.toml
+ls
+$HOME
+which $HOME
+exit
+ls
+rm -rf starship\
+ls
+exit
+ls
+nu config
+ls
+config nu
+ls
+pwd
+env
+wt
+ls
+cd AppData\
+ls
+cd Roaming\
+ls
+cd helix\
+ls
+ss
+pwd
+scoop status
+scoop update googlechrome-dev
+cd `Application Data\`
+ls
+cd nushell\
+ls
+subl .
+help insert
+ls
+ss
+ls
+ss
+scoop update oh-my-posh jdtls
+ls
+hx $nu.env-path
+hx $nu.config-path
+ls
+ls *.nu
+hx .oh-my-posh.nu
+ls
+hx  $nu.env-path
+ls
+cd ws\gitt\
+ls
+git status
+gitui
+cd
+cd `Application Data\`
+ls
+cd nushell\
+ls
+git init
