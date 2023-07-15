@@ -552,6 +552,8 @@ let-env config = {
   ]
 }
 # set Alias
+alias ll = ls -al
+
 alias ss = scoop status
 
 # oh-my-posh
