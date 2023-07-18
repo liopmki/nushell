@@ -556,5 +556,7 @@ alias ll = ls -al
 
 alias ss = scoop status
 
+alias vim = nvim
+
 # oh-my-posh
 source ~/.oh-my-posh.nu
