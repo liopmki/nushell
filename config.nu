@@ -557,6 +557,7 @@ alias ll = ls -al
 alias ss = scoop status
 
 alias vim = nvim
+alias vd = neovide
 alias et = emacs -nw
 
 # oh-my-posh
