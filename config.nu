@@ -555,6 +555,8 @@ $env.config = {
 # set Alias
 alias ll = ls -al
 
+alias fm = explorer .
+
 alias ss = scoop status
 
 alias vim = neovide
