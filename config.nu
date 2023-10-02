@@ -561,7 +561,7 @@ alias ss = scoop status
 
 alias vim = neovide
 #alias vd = neovide
-alias et = emacs -nw
+#alias et = emacs -nw
 
 # oh-my-posh
-source ~/.oh-my-posh.nu
+# source ~/.oh-my-posh.nu

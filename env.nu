@@ -13,7 +13,7 @@ def create_left_prompt [] {
     }
 
     let dir = ([
-        ($env.PWD | str substring 0..($home | str length) | str replace --string $home "~"),
+        ($env.PWD | str substring 0..($home | str length) | str replace $home "~"),
         ($env.PWD | str substring ($home | str length)..)
     ] | str join)
 
@@ -21,7 +21,7 @@ def create_left_prompt [] {
     let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
     let path_segment = $"($path_color)($dir)"
 
-    $path_segment | str replace --all --string (char path_sep) $"($separator_color)/($path_color)"
+    $path_segment | str replace --all (char path_sep) $"($separator_color)/($path_color)"
 }
 
 def create_right_prompt [] {
@@ -30,7 +30,7 @@ def create_right_prompt [] {
     let time_segment = ([
         (ansi reset)
         $time_segment_color
-        (date now | date format '%m/%d/%Y %r')
+        (date now | format date '%m/%d/%Y %r')
     ] | str join | str replace --all "([/:])" $"(ansi light_magenta_bold)${1}($time_segment_color)" |
         str replace --all "([AP]M)" $"(ansi light_magenta_underline)${1}")
 
@@ -85,6 +85,7 @@ $env.NU_PLUGIN_DIRS = [
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
+
 $env.EDITOR = nvim
 # oh-my-posh
-oh-my-posh init nu --config 'C:\Users\Administrator\scoop\apps\oh-my-posh\current\themes\emodipt-extend.omp.json'
+# oh-my-posh init nu --config 'C:\Users\Administrator\scoop\apps\oh-my-posh\current\themes\emodipt-extend.omp.json'
